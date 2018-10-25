@@ -11,9 +11,12 @@ const UserSchema = new Schema({
 		type: String,
 		required: true
 	},
-	avatar: {
+	password: {
 		type: String,
 		required: true
+	},
+	avatar: {
+		type: String
 	},
 	date: {
 		type: Date,
