@@ -17,7 +17,9 @@ const posts = require('./routes/api/posts.js');
 const db = require('./config/keys.js').mongoURI;
 
 //Connect to MongoDB
-mongoose.connect(db, { useNewUrlParser: true }).then(() => console.log('Connected!')).catch(err => console.log(err));
+mongoose.connect(db, { useNewUrlParser: true })
+.then(() => console.log('Connected!'))
+.catch(err => console.log(err));
 
 app.get('/', (req, res) => res.send('Hello'));
 
